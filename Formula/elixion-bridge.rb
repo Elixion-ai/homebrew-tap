@@ -5,21 +5,21 @@
 class ElixionBridge < Formula
   desc "Connect your AI agents to Elixion.io"
   homepage "https://elixion.io"
-  version "1.0.0"
+  version "1.0.1"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Elixion-ai/homebrew-tap/releases/download/v1.0.0/elixion-bridge_1.0.0_darwin_amd64.tar.gz"
-      sha256 "a1dab99e3a1cc1e5dba160254904ea2dca45711f62d4d91a3b789f28e88c9b7c"
+      url "https://github.com/Elixion-ai/homebrew-tap/releases/download/v1.0.1/elixion-bridge_1.0.1_darwin_amd64.tar.gz"
+      sha256 "b5219123d69afc37bd8cf6e414415934dda0e18333adef44fe3aebf032ee1905"
 
       def install
         bin.install "elixion-bridge"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Elixion-ai/homebrew-tap/releases/download/v1.0.0/elixion-bridge_1.0.0_darwin_arm64.tar.gz"
-      sha256 "52c7826718b51bc4b6ef7cc877b23b1940541c6e0dc2f93e3ff3709c1a1f1ebc"
+      url "https://github.com/Elixion-ai/homebrew-tap/releases/download/v1.0.1/elixion-bridge_1.0.1_darwin_arm64.tar.gz"
+      sha256 "ac73b79aa12c048a769434546e0ecd97772b00da5a364b02a2dd2e3f56c1cfb6"
 
       def install
         bin.install "elixion-bridge"
@@ -29,15 +29,15 @@ class ElixionBridge < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Elixion-ai/homebrew-tap/releases/download/v1.0.0/elixion-bridge_1.0.0_linux_amd64.tar.gz"
-      sha256 "5c7cd169a7ea848a6c3e7de6d876c8c54d9cff60ce5b62479225c11e0584e7f9"
+      url "https://github.com/Elixion-ai/homebrew-tap/releases/download/v1.0.1/elixion-bridge_1.0.1_linux_amd64.tar.gz"
+      sha256 "08d7fe32d713811e49c277677ca02e2852290ea6cbc01029ac2153a979736355"
       def install
         bin.install "elixion-bridge"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Elixion-ai/homebrew-tap/releases/download/v1.0.0/elixion-bridge_1.0.0_linux_arm64.tar.gz"
-      sha256 "e0971ae3594a390227fd4004019602965eb20e5bc5b8f6b340dba60df61ca4d0"
+      url "https://github.com/Elixion-ai/homebrew-tap/releases/download/v1.0.1/elixion-bridge_1.0.1_linux_arm64.tar.gz"
+      sha256 "986245aad5cfe0c787b5372de6a597074389696ebc4471376b142c55f65dfd71"
       def install
         bin.install "elixion-bridge"
       end
